@@ -8,23 +8,32 @@
 
     <style>
       #banner {
-        height:360px;
+        height:400px;
         width:100%;
         object-fit:cover;
-        margin-bottom:16px;
+        margin-top:20px;
+      
       }
     </style>
     
   </head>
 
   <body>
-    <img class="img-fluid" id="banner" src="https://jovian-job-site.abinasnayak.repl.co/static/banner.jpg">
+    <img class="img-fluid mt-4" id="banner" src="https://jovian-job-site.abinasnayak.repl.co/static/banner.jpg">
     {% include 'nav.html' %}
       <div class="container">
-        <h1 class="text-center mt-2 mt-4">Jovian Careers</h1>
+        <h1 class="text-center mt-2 mb-2">Jovian Careers</h1>
+        <div class="row" style="margin-bottom:16px">
+          <div class="col-md-6">
         
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis. Ut placerat orci nulla pellentesque. Elementum curabitur vitae nunc sed velit dignissim. Mi quis hendrerit dolor magna eget est lorem. Euismod lacinia at quis risus sed vulputate odio ut enim. Nulla porttitor massa id neque aliquam vestibulum. Tempor nec feugiat nisl pretium fusce id. Bibendum enim facilisis gravida neque convallis a. Pellentesque adipiscing commodo elit at imperdiet dui. Netus et malesuada fames ac turpis egestas. Vitae auctor eu augue ut lectus arcu bibendum at. Ac turpis egestas maecenas pharetra convallis. Risus nullam eget felis eget nunc lobortis mattis. Quis lectus nulla at volutpat diam ut venenatis tellus. Mattis vulputate enim nulla aliquet porttitor.
         </p>
+          </div>
+          
+          <div class="d-none d-md-block col-md-6">
+          <img src ="/static/people.jpg" style="height:320px;">
+          </div>
+        </div>
         <h2 class="text-center mt-2 mt-4">Open Positions</h2>
         <div>
         {%for job in openings%}
@@ -33,7 +42,7 @@
         </div>
         
         <div class="text-center">
-        <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
+        <a href="mailto:abinas.lord@gmail.com?subject=Question%20about%20Job%20Openings&body=My%20name%3A%20%3CYour%20name%20here%3E%0D%0AMy%20question%20%3A%20%3CEnter%20your%20question%20here%3E" type="button" class="btn btn-primary btn-lg">Contact Us</a>
           
         </div>
         
